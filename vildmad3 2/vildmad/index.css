@@ -1,0 +1,235 @@
+/*********************** generelt ****************/
+
+body {
+  background-color: rgb(190, 219, 237);
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo {
+  width: 45%;
+  margin: 10%;
+}
+
+h1 {
+  font-family: "Handlee", cursive;
+  color: rgb(23, 84, 23);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Handlee", cursive;
+  color: rgb(23, 84, 23);
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Handlee", cursive;
+  color: rgb(23, 84, 23);
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  font-size: 1.7rem;
+}
+
+p,
+a {
+  font-family: "Handlee", cursive;
+  font-size: 1.6rem;
+}
+p {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 10%;
+  margin-top: 1%;
+  color: rgb(48, 48, 48);
+}
+
+li {
+  list-style: none;
+}
+
+.footer {
+  background-image: url(billeder/SVG/strand.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 30%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/**************menu*******************/
+
+nav.MainNav a {
+  text-decoration: none;
+  color: rgb(23, 84, 23);
+}
+
+nav.MainNav a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.MainNav {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.MainUl {
+  list-style-type: none;
+  display: flex;
+  margin-top: 4%;
+  gap: 5%;
+}
+
+/* Remove any margin or padding on list items */
+li.MainLi {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  justify-content: space-around;
+}
+
+/******************** startside *******************/
+
+/* index main */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
+  gap: 20px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  text-align: center; /* Center the text within the grid item */
+}
+
+.circle {
+  width: 130px; /* Set the width and height to create a circle */
+  height: 130px;
+  border-radius: 50%; /* Make it circular */
+  overflow: hidden; /* Hide overflow content (in case the image is larger) */
+  margin: 0 auto; /* Center the circle within the grid item */
+}
+
+.circle img {
+  width: 100%; /* Make the image fill the circular container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.circle img:hover {
+  transform: scale(2);
+}
+
+.ingrediens_navn {
+  margin-bottom: 1%;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 45%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.havtorn {
+  width: 20%;
+  margin-bottom: 10%;
+  margin-top: 2%;
+}
+
+.strand_img {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 200px; /* Set the height of the container as needed */
+  /* You can adjust the container's width and other styles as needed */
+}
+
+.strand_center {
+  max-width: 200%; /* Ensure the image doesn't exceed its container's width */
+  max-height: 200%; /* Ensure the image doesn't exceed its container's height */
+  width: auto; /* Allow the image to resize proportionally */
+  height: auto; /* Allow the image to resize proportionally */
+  margin: 10%;
+  padding: 20%;
+}
+
+main {
+  padding: 5%;
+}
+
+/*************************** mobil **************************/
+
+@media screen and (max-width: 800px) {
+  .MainUl {
+    display: none;
+  }
+
+  .logo {
+    width: 80%;
+    margin: 20%;
+  }
+
+  p {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    margin-top: 20%;
+  }
+
+  .havtorn {
+    width: 50%;
+  }
+
+  .map {
+    width: 90%;
+  }
+
+  .circle {
+    width: 100px; /* Set the width and height to create a circle */
+    height: 100px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow content (in case the image is larger) */
+    margin-top: 10%; /* Center the circle within the grid item */
+  }
+
+  .ingrediens_navn {
+    font-size: 1.5rem;
+    margin-top: 2%;
+  }
+
+  .circle img {
+    width: 100%; /* Make the image fill the circular container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .circle img:hover {
+    transform: scale(2);
+  }
+}

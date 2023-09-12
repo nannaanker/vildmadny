@@ -1,0 +1,359 @@
+/*********************** generelt ****************/
+
+body {
+  background-color: rgb(190, 219, 237);
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo {
+  width: 45%;
+  margin: 10%;
+}
+
+
+h1 {
+  font-family: "Handlee", cursive;
+  color: rgb(23, 84, 23);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  }
+
+  h2{
+    font-family: 'Handlee', cursive;
+    color: rgb(23, 84, 23);
+    text-align: center;
+    font-size: 2rem;
+   
+  }
+
+  h3{
+    font-family: 'Handlee', cursive;
+    color: rgb(23, 84, 23);
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    font-size: 1.7rem;
+  }
+
+ 
+
+p,a {
+  font-family: 'Handlee', cursive;
+  font-size: 1.6rem;
+ 
+}
+p{
+margin-left: 25%;
+margin-right: 25%;
+margin-bottom: 10%;
+margin-top: 1%;
+color: rgb(48, 48, 48);
+}
+
+li {
+  list-style: none;
+}
+
+grid-container {
+  display: grid;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.overskrift {
+  margin: 40px;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+.circle img {
+  width: 100%; /* Make the image fill the circular container */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.strand_img {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 200px; /* Set the height of the container as needed */
+  /* You can adjust the container's width and other styles as needed */
+}
+
+/* footer */
+
+.footer {
+  background-image: url(billeder/SVG/strand.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 30%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.row {
+  flex-basis: 48%; /* Adjust the width of columns */
+  flex-grow: 1;
+  margin-bottom: 20px; /* Add margin between rows */
+  margin-top: 20px;
+}
+
+.column {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff43;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+b {
+  font-weight: bold;
+}
+
+/* Basestil for sektionen */
+.recipe-section {
+  padding: 20px;
+  margin: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff43;
+}
+
+/* Stil for kolonnen med ingredienser */
+.ingredients-column {
+  flex: 1;
+  padding-right: 20px; /* Tilføj plads mellem kolonnerne */
+}
+
+/* Stil for kolonnen med fagområder (h3) */
+.categories-column {
+  flex: 1;
+}
+
+/* Stil for listeelementer */
+
+ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: decimal;
+  padding: 20px;
+}
+li {
+  margin-bottom: 10px;
+  font-family: 'Handlee', cursive;
+  font-size: 1.6rem;
+}
+
+/* Overskriftsstil */
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+/* header */
+
+/* Reset some default styles for ul and li */
+.MainUl {
+  list-style-type: none;
+  display: flex;
+  margin-top: 4%;
+  gap: 5%;
+
+}
+
+/* Remove any margin or padding on list items */
+li.MainLi {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  justify-content: space-around;
+}
+
+/* Style the header */
+
+
+
+
+/* Style the navigation links */
+nav.MainNav a {
+  text-decoration: none;
+  color: rgb(23, 84, 23);
+
+}
+
+nav.MainNav a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+
+ 
+}
+
+
+.MainNav{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+
+
+
+.toppen {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+
+  .MainUl{display: none;}
+
+  .logo {
+    width: 80%;
+    margin: 20%;
+  }
+
+
+   
+  
+  p{
+    margin-left: 0;
+  margin-right: 0;
+  font-size: 1.5rem;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+   
+  }
+  
+  h3{
+    margin-top: 20%;
+  }
+  
+ 
+
+  
+
+  .grid-item {
+    text-align: center; /* Center the text within the grid item */
+  }
+
+
+
+  .circle {
+    width: 200px; /* Set the width and height to create a circle */
+    height: 200px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden; /* Hide overflow content (in case the image is larger) */
+    margin: 0 auto; /* Center the circle within the grid item */
+  }
+
+  .circle img {
+    width: 100%; /* Make the image fill the circular container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribute columns evenly */
+    gap: 5px; /* Add spacing between columns and rows */
+  }
+
+  .row {
+    flex-basis: 28%; /* Adjust the width of columns */
+    flex-grow: 2;
+    margin-bottom: 20px; /* Add margin between rows */
+    margin-top: 20px;
+  }
+
+  .column {
+    margin: 10px;
+    padding: 20px;
+   
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+
+
+  .recipe-section {
+    padding: 10px; /* Juster padding på små skærme */
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .ingredients,
+  .categories {
+    margin-bottom: 10px; /* Juster marginen på små skærme */
+  }
+  ol {
+    counter-reset: my-counter; /* Reset the counter for the ordered list */
+    list-style-type: none; /* Remove default numbering */
+  }
+
+  li {
+    counter-increment: my-counter; /* Increment the counter for each list item */
+    margin-bottom: 10px; /* Add spacing between list items */
+    text-align: justify;
+  }
+
+  li::before {
+    content: counter(
+      my-counter
+    ); /* Display the current counter value before each list item */
+    margin-right: 5px; /* Add spacing between the number and the list item text */
+    font-weight: bold; /* Make the number bold */
+  }
+}
+
+
