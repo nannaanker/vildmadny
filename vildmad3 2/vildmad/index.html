@@ -1,107 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/svg" href="billeder/SVG/Layer3.svg" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/svg" href="billeder/SVG/Layer3.svg">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
-</head>
+  <body>
+    <header>
+      <nav class="MainNav">
+        <div>
+          <a href="index.html"
+            ><img class="logo" src="billeder/SVG/Layer3.svg" alt="logo"
+          /></a>
+        </div>
 
-<body>
-  <header>
-    <nav class="MainNav">
+        <div>
+          <ul class="MainUl">
+            <li class="MainLi"><a href="index.html"> SANKELANDSKABER</a></li>
+            <li class="MainLi"><a href="index.html">RÅVARER</a></li>
+            <li class="MainLi"><a href="index.html">VIDEN</a></li>
+            <li class="MainLi"><a href="index.html">VILD MAD-FORMIDLER</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-
-      <div><a href="index.html"><img class="logo" src="billeder/SVG/Layer3.svg" alt="logo"></a></div>
-
-
-      <div>
-
-        <ul class="MainUl">
-          <li class="MainLi"><a href="index.html"> SANKELANDSKABER</a></li>
-          <li class="MainLi"><a href="index.html">RÅVARER</a></li>
-          <li class="MainLi"><a href="index.html">VIDEN</a></li>
-          <li class="MainLi"><a href="index.html">VILD MAD-FORMIDLER</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-  <main>
-    <h1>STRANDEN</h1>
-    <p>
-      Stranden med havet, opskyllet tang og grønne bælter af urter. I
-      klitterne vokser marehalm og buskadser af hyben og havtorn.
-    </p>
-    <!-- <div class="strand_img">
+    <main>
+      <h1>STRANDEN</h1>
+      <p>
+        Stranden med havet, opskyllet tang og grønne bælter af urter. I
+        klitterne vokser marehalm og buskadser af hyben og havtorn.
+      </p>
+      <!-- <div class="strand_img">
         <img 
         src="https://www.vildmad.dk/application/files/9214/9796/4852/Strandeng-color.jpg"
         alt="stranding" class="strand_center"
       /> 
        </div> -->
 
+      <div class="image-container">
+        <img
+          class="havtorn"
+          src="billeder/planter.svg/havtorn.svg"
+          alt="havtorn"
+        />
+      </div>
 
-    <div class="image-container">
-      <img class="havtorn" src="billeder/planter.svg/havtorn.svg" alt="havtorn">
-    </div>
+      <h2>Introduktion</h2>
+      <p>
+        Stranden er et barskt miljø, hvor alt liv må tilpasse sig salt, hård
+        vind og stærk sol. Planternes strategi er at holde godt på væsken, så de
+        ikke tørrer ud. Det giver saftige og sprøde vækster, der er rigtig gode
+        i køkkenet. Det er bedst at sanke på stranden fra april til september,
+        hvor du finder både spiselig tang og smagfulde urter og bær.
+      </p>
 
+      <h3>Disse ingredienser kan du finde!</h3>
 
-    <h2>Introduktion</h2>
-    <p>
-      Stranden er et barskt miljø, hvor alt liv må tilpasse sig salt, hård
-      vind og stærk sol. Planternes strategi er at holde godt på væsken, så de
-      ikke tørrer ud. Det giver saftige og sprøde vækster, der er rigtig gode
-      i køkkenet. Det er bedst at sanke på stranden fra april til september,
-      hvor du finder både spiselig tang og smagfulde urter og bær.
-    </p>
+      <ul>
+        <li class="grid-item">
+          <a href="om.html">
+            <div class="circle">
+              <img
+                src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
+                alt="element"
+              />
+            </div>
+          </a>
 
+          <p class="ingrediens_navn">Blærtang</p>
+        </li>
+      </ul>
 
+      <ol class="grid-container"></ol>
 
-    <h3>Disse ingredienser kan du finde!</h3>
+      <h3>Find ingredienserne på kortet!</h3>
 
-    <ul>
-      <li class="grid-item">
+      <div class="map-container">
+        <img class="map" src="billeder/SVG/map(1).svg" alt="map" />
+      </div>
+    </main>
 
-
-        <a href="om.html">
-          <div class="circle">
-            <img src="https://vildmadv2.vps.webdock.io/application/files/7116/2029/3479/Blaeretang_ravarkort.png"
-              alt="element">
-          </div>
-        </a>
-
-        <p class="ingrediens_navn">Blærtang</p>
-      </li>
-
-    </ul>
-
-    <ol class="grid-container"></ol>
-
-    <h3>Find ingredienserne på kortet!</h3>
-
-
-
-    <div class="map-container">
-
-      <img class="map" src="billeder/SVG/map(1).svg" alt="map">
-    </div>
-
-
-  </main>
-
-
-
-  <footer class="footer">
-
-  </footer>
-  <script src="main.js"></script>
-</body>
-
+    <footer class="footer"></footer>
+    <script src="main.js"></script>
+  </body>
 </html>
