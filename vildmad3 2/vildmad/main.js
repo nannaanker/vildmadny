@@ -34,6 +34,7 @@ function build(products){
     console.table(products)
     document.querySelector(".overskrift").textContent = products.titel;
     document.querySelector(".tekst").textContent = products.description ;
+    document.querySelector(".under-overskrift").textContent = products.food_name ;
     document.querySelector(".sanke").textContent = products.categories_sankested ;
     document.querySelector(".seson").textContent = products.categories_time ;
 
