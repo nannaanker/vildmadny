@@ -1,13 +1,17 @@
 
+
+
+// 1. Analyser querystring-parametre fra URL'en for at hente "id"-værdien.
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+
+// 2. Definer API-endepunkt og API-nøgle (bør opbevares sikkert).
 
 const url= ("https://jszlkwoagoveednauwsf.supabase.co/rest/v1/vild_mad_data")
 
 const key =("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impzemxrd29hZ292ZWVkbmF1d3NmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTM5MDIzOTcsImV4cCI6MjAwOTQ3ODM5N30.sGTpEXzcNBQo-quSAoZl_aTwHVa1YCVeSl5jBzohEy0")
 
-
-
+// 3. Udfør en GET-anmodning til det eksterne API med API-nøglen som en header.
 
 fetch(`https://jszlkwoagoveednauwsf.supabase.co/rest/v1/vild_mad_data?id=eq.${id}`,
  {
@@ -20,9 +24,10 @@ headers: {
 
 },
 })  
-
+// 4. Behandle svaret som JSON og vis produktdataen.
 .then(res=>res.json())
 .then(data=>showProduct(data));
+// 5. Vis produktdataen i DOM-elementer.
 
 function showProduct(product){
     console.table("product", product);
