@@ -39,7 +39,7 @@ const copy = template.cloneNode(true);
  copy.querySelector("a").setAttribute("href", `om.html?id=${product.id}`);
 
 // appende
-   document.querySelector("section").appendChild(copy);
+   document.querySelector(".grid-container").appendChild(copy);
 }
 
    

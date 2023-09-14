@@ -41,6 +41,11 @@ a {
   font-size: 1.6rem;
 }
 
+a {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   margin-left: 25%;
   margin-right: 25%;
@@ -111,11 +116,14 @@ li.MainLi {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-gap: 20px;
+  justify-content: space-around;
 }
 
 .grid-item {
   text-align: center; /* Center the text within the grid item */
+  padding: 20px;
+  margin: 0;
 }
 
 .circle {

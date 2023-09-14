@@ -125,6 +125,19 @@ a {
   padding: 0;
   font-size: 17px;
 }
+
+.dropdown img {
+  width: 100px;
+  height: 50px;
+  transition: transform 1s; /* Add a smooth transition effect */
+}
+
+/* Define the hover effect for the image */
+.dropdown:hover img {
+  transform: scale(0.2); /* Increase the image size on hover */
+  /* You can also add other styles or animations here */
+}
+
 /* footer */
 
 .footer {
@@ -314,7 +327,7 @@ nav.MainNav a:hover {
     height: 150vh;
   }
 
-  .dropdown {
+  .dropdown-content {
     margin: 3%;
   }
 
@@ -336,7 +349,7 @@ nav.MainNav a:hover {
     color: black;
   }
 
-  .opskrift{
+  .opskrift {
     width: 100%;
   }
 }
