@@ -56,8 +56,10 @@ li {
   color: rgb(23, 84, 23);
 }
 
-ul{padding: 0;
-  margin: 0;}
+ul {
+  padding: 0;
+  margin: 0;
+}
 
 .footer {
   background-image: url(billeder/SVG/strand.webp);
@@ -108,8 +110,8 @@ li.MainLi {
 /* index main */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Create a 4-column grid */
-  gap: 20px; /* Adjust the gap between grid items */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .grid-item {
@@ -179,12 +181,6 @@ li.MainLi {
 main {
   padding: 5%;
 }
-
-
-
-
-
-
 
 /*************************** mobil **************************/
 

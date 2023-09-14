@@ -50,13 +50,11 @@ p {
 
 li {
   list-style: none;
-    list-style: none;
-    font-family: "Handlee", cursive;
-    font-size: 1.6rem;
-    color: rgb(23, 84, 23);
-  }
-
- 
+  list-style: none;
+  font-family: "Handlee", cursive;
+  font-size: 1.6rem;
+  color: rgb(23, 84, 23);
+}
 
 grid-container {
   display: grid;
@@ -98,7 +96,35 @@ a {
 }
 
 /* dropdown */
+.desc {
+  display: none;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 20px;
+  z-index: 1;
+  position: relative;
+}
 
+.info_tekst {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+
+.seson {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
+
+.sanke {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+}
 /* footer */
 
 .footer {
@@ -152,22 +178,18 @@ b {
   background-color: #ffffff43;
 }
 
-
 /***********************opskrift styling****************/
 
-.opskrift-container{
+.opskrift-container {
   display: flex;
   justify-content: center;
   margin-bottom: 10%;
   margin-top: 2%;
 }
 
-
-.opskrift{
+.opskrift {
   width: 60%;
-  
 }
-
 
 /* Stil for kolonnen med ingredienser */
 .ingredients-column {
@@ -246,21 +268,18 @@ nav.MainNav a:hover {
 .grid_container {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   height: 50vh;
+  gap: 25px;
 }
 
-
-
+/* mobil */
 
 @media screen and (max-width: 800px) {
-
-  main{
+  main {
     margin: 4%;
   }
-    
-
 
   .MainUl {
     display: none;
@@ -295,11 +314,10 @@ nav.MainNav a:hover {
     height: 57vh;
   }
 
-  .dropdown{
+  .dropdown {
     margin: 3%;
   }
 
- 
   .circle {
     width: 200px; /* Set the width and height to create a circle */
     height: 200px;
@@ -316,63 +334,5 @@ nav.MainNav a:hover {
   a {
     text-decoration: none;
     color: black;
-  }
-
-  .type {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Distribute columns evenly */
-    gap: 5px; /* Add spacing between columns and rows */
-  }
-
-  .row {
-    flex-basis: 28%; /* Adjust the width of columns */
-    flex-grow: 2;
-    margin-bottom: 20px; /* Add margin between rows */
-    margin-top: 20px;
-  }
-
-  .column {
-    margin: 10px;
-    padding: 20px;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .recipe-section {
-    padding: 10px; /* Juster padding på små skærme */
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
-  .ingredients,
-  .categories {
-    margin-bottom: 10px; /* Juster marginen på små skærme */
-  }
-
-.opskrift{
-  width: 100%;
-}
-
-  ol {
-    counter-reset: my-counter; /* Reset the counter for the ordered list */
-    list-style-type: none; /* Remove default numbering */
-  }
-
-  li {
-    counter-increment: my-counter; /* Increment the counter for each list item */
-    margin-bottom: 10px; /* Add spacing between list items */
-    text-align: justify;
-  }
-
-  li::before {
-    content: counter(
-      my-counter
-    ); /* Display the current counter value before each list item */
-    margin-right: 5px; /* Add spacing between the number and the list item text */
-    font-weight: bold; /* Make the number bold */
   }
 }

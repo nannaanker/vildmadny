@@ -62,17 +62,39 @@ function build(products){
 
 // IKONER:
 
+// // vælger vores elemnet som vi vil tag fat i
+// const dropdowns = document.querySelectorAll(".dropdown");
+
+// // hvad der sker når du vil åben dropdown
+// dropdowns.forEach((dropdown) => {
+//   dropdown.addEventListener("toggle", () => {
+//     // vi henter vores css element der er mouseover 
+//     dropdown.querySelector(".dropdown-content").style.display = "block";
+//   });
+// // for at kunne fjerne block teksten
+//   dropdown.addEventListener("click", () => {
+//     dropdown.querySelector(".dropdown-content").style.display = "none";
+//   });
+// });
+
+
 // vælger vores elemnet som vi vil tag fat i
 const dropdowns = document.querySelectorAll(".dropdown");
 
-// hvad der sker når du vil åben dropdown
 dropdowns.forEach((dropdown) => {
-  dropdown.addEventListener("mouseover", () => {
-    // vi henter vores css element der er mouseover 
+  // fjern "toggle" event listener
+  dropdown.removeEventListener("toggle", () => {
     dropdown.querySelector(".dropdown-content").style.display = "block";
   });
-// for at kunne fjerne block teksten
-  dropdown.addEventListener("mouseout", () => {
-    dropdown.querySelector(".dropdown-content").style.display = "none";
+
+  // tilføj "click" event listener
+  dropdown.addEventListener("click", () => {
+    // Skift display-stilen af dropdown-content baseret på dens nuværende tilstand
+    const dropdownContent = dropdown.querySelector(".desc");
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
   });
 });
