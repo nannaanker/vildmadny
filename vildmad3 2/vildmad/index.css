@@ -118,6 +118,7 @@ li.MainLi {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   justify-content: space-around;
+  margin:15%;
 }
 
 .grid-item {
@@ -145,6 +146,7 @@ li.MainLi {
 
 .ingrediens_navn {
   margin-bottom: 1%;
+  margin-top: 5%;
 }
 
 .map-container {
